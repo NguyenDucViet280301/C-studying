@@ -1,0 +1,31 @@
+-	Biến là: Tên của vùng nhớ để lưu trữ dữ liệu: các dữ liệu đầu vào lấy từ file, do người dùng nhập liệu, kết quả đầu ra sau khi tính toán, các dữ liệu trung gian trong quá trình thực hiện chương trình.
+-	Đặc trưng:
++ Mỗi biến có một kiểu dữ liệu nhất định
++ Biến phải được khai báo trước khi sử dụng
++ Biến trong ngôn ngữ C phân biệt chữ hoa chữ thường: an và AN or An là khác nhau
++ Kiêu của biến quy định các phép toán mà biến có thể thao tác với
+-	Các khai báo biến:
++ cú pháp tổng quát: 
+    kiểu_dữ_liệu    danh_sách_tên_biến;
+trong đó:
+-	kiểu_dữ_liệu  là kiểu hợp lệ trong ngôn ngữ C
+-	danh_sách_tên_biến là tên các biến do người dùng tự đặt
+Ví dụ:
+int firstvalue, secondvalue, thirdvalue; //3 biến int
+char c, d, f, g; //4 biến kiểu char
+Quy ước:
+-	Tên biến phải bắt đầu bằng chữ cái thường hoặc gạch dưới (_)
+-	Tên biến phải mang một ý nghĩa nào đó
+-	Tên biến dài hơn một từ thì chữ cái từ tiếp theo luôn viết hoa
+-	Tên biến không được trùng với các keyword trong thư viện C
+Ví dụ:
+Int toanHang1, toanHang2;
+Double laiSuat;
+char kiTu;
+Có thể khởi tạo luôn giá trị của biến khi khai báo
+Int toanHang1 = 50, toanHang2 = -10;
+char kiTu = ‘C’;
+Có 3 loại biến: Biến hình thức, biến cục bộ, biến toàn cục.
+Trong đó: 
+-	Biến toàn cục là biến có phạm vi sử dụng trong toàn bộ chương trình, khai báo ở ngoài tất cả các hàm các khối.
+-	Biến cục bộ là biến chỉ có phạm vi sử dụng trong khối/hàm kể từ sau vị trí nó được khai báo
