@@ -1,0 +1,32 @@
+Một hàm là một nhóm các lệnh đi cùng nhau để thực hiện một nhiệm vụ. Mỗi chương trình C/C++ có ít nhất một hàm là hàm main(), và tất cả hầu hết các chương trình bình thường đều định nghĩa thêm các hàm.
+Mẫu chung của định nghĩa hàm trong Ngôn ngữ C/C++ như sau:
+
+Kieu_tra_ve Ten_ham( Danh sach tham so )
+{
+   Than ham
+}
+Một định nghĩa hàm trong ngôn ngữ C/C++ bao gồm đầu hàm và một thân hàm. Dưới đây là các phần của một hàm:
+
+Kiểu trả về: Một hàm có thể trả về một giá trị. Kieu_tra_ve là dạng dữ liệu của giá trị mà hàm trả về. Vài hàm cung cấp các hoạt động và không trả về giá trị nào cả. Đó là hàm void.
+Tên hàm: Đây là tên thực sự của hàm. Tên hàm và danh sách tham số cấu tạo nên dấu hiệu hàm.
+Danh sách tham số: Khi hàm được gọi, bạn phải truyền vào danh sách các tham số. Một giá trị hướng đến một tham số thực tế. Danh sách tham số có các kiểu, thứ tự và số lượng các tham số của hàm. Các tham số trong hàm là tùy chọn, nghĩa là một hàm có thể không có tham số.
+Thân hàm: Phần thân của một hàm bao gồm tập hợp các lệnh xác định những gì mà hàm thực hiện.
+
+Ví dụ
+
+Sau đây phần code cho một hàm có tên gọi là max(). Hàm này có 2 tham số: so1 và so2 và trả về giá trị lớn nhất giữa hàm số:
+
+// ham tra ve so lon nhat cua hai so
+
+int max(int so1, int so2) 
+{
+   // Khai bao bien cuc bo
+   int result;
+
+   if (so1 > so2)
+      result = so1;
+   else
+      result = so2;
+
+   return result; 
+}
