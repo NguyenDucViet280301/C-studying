@@ -1,0 +1,46 @@
+Câu lệnh if-else
+if statement
+Câu lệnh điều kiện "if" trong ngôn ngữ lập trình C cho phép bạn kiểm tra một điều kiện nào đó và thực hiện các hành động khác nhau dựa trên kết quả của điều kiện đó. Hãy bắt đầu với cú pháp cơ bản:
+if (condition) {
+    // khối lệnh này được thực thi nếu condition = true
+}
+condition là biểu thức logic bạn muốn kiểm tra.
+Nếu condition là đúng, các câu lệnh bên trong khối lệnh { } sẽ được thực thi. Nếu condition là sai, các câu lệnh này sẽ được bỏ qua.
+Tại vị trí condition, chúng ta sẽ viết một điều kiện để kiểm tra sử dụng các toán tử quan hệ đã được hướng dẫn ở trên.
+Đây là một ví dụ:
+// Program to display a number if it is negative
+#include <stdio.h>
+int main() {
+    int number;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+    // true if number is less than 0
+    if (number < 0) {
+        printf("You entered %d.\n", number);
+    }
+    printf("Done.");
+}
+
+if-else statement
+Đôi khi, chúng ta cần thực hiện các hành động khác nếu điều kiện không đúng. Đó là lúc chúng ta sử dụng câu lệnh "else."
+if (condition) {
+    // khối lệnh này được thực thi nếu condition = true
+} else {
+    // khối lệnh này được thực thi nếu condition = false
+}
+Nếu condition trả về true thì các câu lệnh bên trong phần thân của if được thực thi và các câu lệnh bên trong phần thân của else bị bỏ qua.
+Nếu condition trả về false thì các câu lệnh bên trong phần thân của if bị bỏ qua và các câu lệnh trong else được thực thi.
+Đây là một ví dụ:
+#include <stdio.h>
+int main() {
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    if (age >= 18) {
+    // Câu lệnh này sẽ được thực thi nếu điều kiện trên (age >= 18) trả về true
+    printf("You are eligible for voting.");
+    } else {
+    // Câu lệnh này sẽ được thực thi nếu điều kiện trên (age >= 18) trả về false
+    printf("You are not eligible for voting.");
+    }
+}
