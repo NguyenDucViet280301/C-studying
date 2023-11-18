@@ -1,0 +1,76 @@
+- Vòng lặp for:
+
+Cú pháp cơ bản của vòng lặp "for" trong C như sau:
+for (khởi tạo giá trị biến lặp; điều kiện lặp; cập nhật biến lặp) {
+   // statements inside the body of loop
+}
+khởi tạo giá trị biến lặp: Điều này thường là một biến dùng để kiểm soát số lần lặp. Bạn có thể khởi tạo giá trị ban đầu của biến ở đây.
+điều kiện lặp: Điều kiện được kiểm tra trước mỗi lần lặp. Nếu điều kiện trả về false, vòng lặp sẽ kết thúc.
+cập nhật biến lặp: Bước này thường là để thay đổi giá trị của biến lặp sau mỗi lần lặp.
+Ví dụ:
+for (int i = 0; i <= 10; i++) {
+   // statements inside the body of loop
+}
+Vòng lặp hoạt động như thế nào?
+Bước 1: Khởi tạo giá trị biến lặp. Bước này chỉ diễn ra một lần duy nhất, ở đầu vòng lặp. Nó được sử dụng để khởi tạo biến lặp và thường được thực hiện một lần duy nhất.
+Bước 2: Kiểm tra điều kiện lặp. Trước mỗi lần lặp, điều kiện lặp được kiểm tra. Nếu điều kiện trả về false, vòng lặp kết thúc. Nếu trả về true, vòng lặp tiếp tục.
+Bước 3: Thực Hiện Câu Lệnh Trong Vòng Lặp. Tuy nhiên, nếu biểu thức kiểm tra bằng true, các câu lệnh bên trong phần thân của vòng lặp for được thực thi.
+Bước 4: Cập Nhật Biến Lặp. Cập nhật giá trị biến lặp và quay trở lại bước 2 để kiểm tra.
+Quá trình này diễn ra cho đến khi biểu thức điều kiện (bước 2) kiểm tra là false. Khi biểu thức điều kiện kiểm tra là false, vòng lặp chấm dứt.
+
+- Vòng lặp while:
+
+Vòng lặp while trong C được sử dụng để lặp một phần của chương trình một vài lần. Nếu số lần lặp không được xác định trước thì vòng lặp lặp while được khuyến khích sử dụng trong trường hợp này.
+Cú pháp:
+while(condition) {
+    // Khối lệnh được lặp lại cho đến khi condition = False
+}
+trong đó, condition có thể là bất kỳ biểu thức nào. Khối lệnh trong vòng lặp while được thực thi trong khi condition là true. Khi condition là false thì điều khiển chương trình sẽ chuyển đến dòng ngay sau vòng lặp.
+
+Ví dụ vòng lặp while trong C
+#include <stdio.h>
+int main () {
+    int a = 10;
+    while( a < 20 ) {
+        printf("Gia tri cua a: %d\n", a);
+        a++;
+    }
+    return 0;
+}
+
+- Vòng lặp do - while
+Không giống như các vòng lặp for và while, mà kiểm tra điều kiện vòng lặp ở ngay bước đầu tiên của vòng lặp, vòng lặp do…while trong Ngôn ngữ C kiểm tra điều kiện của nó tại phần cuối của vòng lặp.
+Một vòng lặp do...while là tương tự như vòng lặp while, ngoại trừ ở điểm một vòng lặp do…while bảo đảm thực hiện vòng lặp ít nhất một lần.
+
+Cú pháp:
+Cú pháp của một vòng lặp do...while trong Ngôn ngữ C là như sau:
+
+do
+{
+   cac_lenh;
+
+}while( dieu_kien );
+
+Bạn chú ý rằng, biểu thức điều kiện xuất hiện ở cuối cùng của vòng lặp, vì thế các lệnh trong vòng lặp thực hiện một lần trước khi điều kiện được kiểm tra.
+
+Nếu điều kiện là true, dòng điều khiển vòng lặp quay trở lại, và các lệnh trong vòng lặp được thực hiện lần nữa. Tiến trình này lặp đi lặp lại tới khi nào điều kiện đã cho trở thành false.
+
+Ví dụ:
+#include <stdio.h>
+ 
+int main ()
+{
+   /* phan dinh nghia bien cuc bo  */
+   int a = 10;
+
+   /* vong lap do...while */
+   do
+   {
+       printf("Gia tri cua a la: %d\n", a);
+       a = a + 1;
+   }while( a < 15 );
+   printf("\n===========================\n");
+   printf("VietJack chuc cac ban hoc tot! \n");
+ 
+   return 0;
+}
