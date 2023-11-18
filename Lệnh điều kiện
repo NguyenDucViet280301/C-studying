@@ -44,3 +44,30 @@ int main() {
     printf("You are not eligible for voting.");
     }
 }
+
+
+Switch - case
+
+Lệnh switch case là một cấu trúc điều khiển & rẽ nhánh hoàn toàn có thể được thay thế bằng cấu trúc if else. Tuy nhiên, việc sử dụng switch case sẽ giúp code của chúng ta dễ viết và dễ đọc hơn. Một điều nữa là sử dụng switch case có vẻ như cho hiệu năng tốt hơn so với sử dụng if else trong trường hợp có nhiều điều kiện có thể xảy ra.
+
+Cú pháp câu lệnh switch case:
+
+switch (expression)
+​{
+   case constant1:
+     // statements
+     break;
+   case constant2:
+     // statements
+     break;
+   .
+   .
+   .
+   default:
+     // default statements
+}
+ 
+
+expression phải bắt buộc là giá trị hằng, có thể là biểu thức nhưng kết quả cần là hằng số. Trong đó, expression sẽ được so sánh với các giá trị của các case.
+Nếu có 1 case nào đó khớp giá trị, các khối lệnh tương ứng sau case đó sẽ được thực hiện cho tới khi gặp lệnh break. Do đó, nếu chúng ta không sử dụng break thì tất cả các case kể từ case khớp giá trị đều được thực hiện.
+Case default sẽ được thực hiện nếu không có case nào khớp giá trị với expression. 
