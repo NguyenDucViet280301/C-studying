@@ -1,0 +1,24 @@
+Enum hay Enumeration là kiểu dữ liệu cố định, chỉ cho phép biến nhận số số giá trị nhất định nào đó
+Các giá trị enum có thể coi là một hằng số. Việc sử dụng enum giúp đảm bảo giá trị các biến chỉ nhận các giá trị mong đợi.
+
+Ví dụ: Mình định nghĩa kiểu Enum là dayOfWeek và chỉ nhận các giá trị là ngày trong tuần (từ thứ 2 đến chủ nhật). Mỗi lần có tính toán tới ngày trong tuần thì mình dùng dayOfWeek sẽ giúp tránh các giá trị nằm ngoài khoảng từ thứ hai đến chủ nhât.
+Để tạo enum trong C/C++ ta dùng từ khóa enum với cú pháp sau:
+
+enum ten_enum {trang_thai_1: gia_tri_1, trang_thai_2: gia_tri_2,...}
+Ví dụ:
+
+#include<stdio.h> 
+
+enum dayOfWeek{Mon=2, Tue=3, Wed=4, Thur=5, Fri=6, Sat=7, Sun=8}; 
+
+int main()
+{
+enum dayOfWeek day; 
+ day = Wed; 
+
+printf("Wednesday: %d n",day); 
+
+printf("All day of week: %d - %d - %d - %d - %d - %d - %d", Mon, Tue, Wed, Thur, Fri, Sat, Sun); 
+
+return 0; 
+}
