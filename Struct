@@ -1,0 +1,27 @@
+Các mảng trong C cho phép bạn định nghĩa một vài loại biến có thể giữ giá trị của một vài thành phần cùng kiểu dữ liêu. Nhưng structure - cấu trúc là một loại dữ liệu khác trong ngôn ngữ lập trình C, cho phép bạn kết hợp các dữ liệu khác kiểu nhau.
+
+Cấu trúc được sử dụng để biểu diễn một bản ghi. Giả sử bạn muốn lưu trữ giá trị của một quyển sách trong thư viện của bạn. Bạn có thể lưu trữ các thuộc tính của sách sau đây:
+
+Tiêu đề
+Tác giả
+Chủ đề
+ID (giống như là mã số sinh viên của bạn)
+Định nghĩa một cấu trúc trong C
+Để định nghĩa cấu trúc, bạn phải sử dụng câu lệnh struct. Câu lệnh struct định nghĩa một kiểu dữ liệu mới, với hơn một thành phần trong chương trình của bạn. Dạng tổng quát của câu lệnh struct như sau đây:
+
+struct [ten_cau_truc]
+{
+   phan dinh nghia thanh vien cau truc;
+   phan dinh nghia thanh vien cau truc;
+   ...
+   phan dinh nghia thanh vien cau truc;
+} [mot hoac nhieu bien cau truc];  
+Một ten_cau_truc có thể tùy chọn và một thành phần định nghĩa là các biến thường như int i, float j hoặc một định nghĩa biến khác …. Tại phần cuối cùng của định nghĩa cấu trúc, trước dấu chấm phẩy, bạn có thể xác định một hoặc nhiều biến cấu trúc (tùy chọn). Dưới đây là cách khai báo biến structure Book:
+
+struct Books
+{
+   char  tieude[50];
+   char  tacgia[50];
+   char  chude[100];
+   int   id;
+} book;  
